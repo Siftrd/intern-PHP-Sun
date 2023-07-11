@@ -2,9 +2,10 @@
 require "header.php";
 ?>
 
-<h1>Welcome</h1>
-<p>Welcome to my movie-database, here you can see a list of my favorite movies.</p>
-<img class="img-responsive" src="https://cdn.pixabay.com/photo/2019/04/24/21/55/cinema-4153289_640.jpg"
+<h1 style="font-size:110px;">WELCOME</h1>
+<h1 style="font-size:80px;">TO</h1>
+<h1 style="font-size:80px;">THE MOVIE </h1>
+<h1 style="font-size:80px;">WORLD</h1>
 
 <?php
 require "footer.php";
