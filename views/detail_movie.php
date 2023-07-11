@@ -4,12 +4,12 @@
 <?php require "header.php"; ?>
 
 <style>
-    .container {
+    /* .container {
         background-color: #f5f5f5;
         padding: 20px;
         border-radius: 5px;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    }
+    } */
 
     h2 {
         margin-bottom: 20px;
@@ -30,7 +30,7 @@
     }
 </style>
 
-<h2>Movie Details</h2>
+<h2>Movie Info</h2>
 <div>
     <strong>Title:</strong> <?php echo $movie['title']; ?>
 </div>
@@ -41,7 +41,7 @@
     <strong>Movie Genre:</strong> <?php echo $movie['type']; ?>
 </div>
 
-<a class="btn btn-default" href="/index.php?page=show">Back to Movie List</a>
+<a class="btn btn-info" href="/index.php?page=show">Back to Movie List</a>
 
 
 <?php require "footer.php"; ?>

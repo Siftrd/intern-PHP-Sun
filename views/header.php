@@ -34,12 +34,11 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="../index.php?page=start">Favorite Movies List</a>
+          <a class="navbar-brand nav-color" href="../index.php?page=start">Favorite Movies</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li><a href="../index.php?page=show">Show</a></li>
-            <li><a href="../index.php?page=create_movie">Create Movie</a></li>
+            <li><a class="nav-color" href="../index.php?page=show">Manage</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>

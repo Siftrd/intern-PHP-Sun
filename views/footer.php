@@ -2,7 +2,7 @@
 
     <footer class="footer">
       <div class="container">
-      Copyright @ All right reserve | This template made with PHP intro
+        <h5 class="txt-footer">Copyright @ All right reserve | This template made with PHP intro</h5>
       </div>
     </footer>
 

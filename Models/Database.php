@@ -29,16 +29,13 @@ class Database {
     public function create($table, $data) {
         $columns = array_keys($data);
         $columnSql = implode(',', $columns);
-        //'name, birthyear, city';
         $bindingSql = ':'.implode(',:', $columns);
-        //':Anna, :1989, :Trollhättan';
         $sql = "INSERT INTO $table ($columnSql) VALUES ($bindingSql)";
         $stm = $this->pdo->prepare($sql);
         foreach ($data as $key => $value) {
             $stm->bindValue(':'.$key, $value);
         }
         $status = $stm->execute();
-        //mellan ? och : är if och mellan : och ; är else.
         return ($status) ? $this->pdo->lastInsertId() : false;
     }
     public function update($table, $id, $data) {

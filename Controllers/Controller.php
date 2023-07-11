@@ -79,10 +79,10 @@ Class Controller {
 
     public function success() {
         if (isset($_GET['insert_success_movie']) && $_GET['insert_success_movie']) {
-            echo "<p>Your movie was successfully inserted! If you want to see your movie click <a href='/index.php?page=update_movie&id=" .$_GET['id']. "'>Here</a></p>";
+            echo "<p>Your movie was successfully inserted!";
         }
         elseif (isset($_GET['insert_success_movie']) && $_GET['insert_success_movie']) {
-            echo "<p>Your movie was successfully inserted! If you want to see your movie click <a href='/index.php?page=update_movie&id=" .$_GET['id']. "'>Here</a></p>";
+            echo "<p>Your movie was successfully inserted!";
         }
         elseif (isset($_GET['insert_success_movie']) && !$_GET['insert_success_movie']) {
             echo "<p>Something went wrong!</p>";
@@ -94,10 +94,10 @@ Class Controller {
 
     public function updateSuccess() {
         if (isset($_GET['update_success_movie']) && $_GET['update_success_movie']) {
-            echo "<p>Your movie was successfully updated! If you want to see your movie click <a href='/index.php?page=update_movie&id=" .$_GET['id']. "'>Here</a></p>";
+            echo "<p>Your movie was successfully updated!";
         }
         elseif (isset($_GET['update_success_movie']) && $_GET['update_success_movie']) {
-            echo "<p>Your movie was successfully updated! If you want to see your movie click <a href='/index.php?page=update_movie&id=" .$_GET['id']. "'>Here</a></p>";
+            echo "<p>Your movie was successfully updated!";
         }
         elseif (isset($_GET['update_success_movie']) && !$_GET['update_success_movie']) {
             echo "<p>Something went wrong!</p>";

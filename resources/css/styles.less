@@ -1,13 +1,24 @@
 @bg-color: #EEE;
-@color: #000;
+@color: rgb(249, 246, 246);
 @btn-primary-color: #fff;
-@btn-color: rgb(35, 103, 204);
+@btn-color: rgb(247, 247, 250);
 @var: 60px;
 @padding: 5px;
 
+html{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(https://tophinhanhdep.com/wp-content/uploads/2021/11/Avengers-Endgame-3D-Wallpapers.jpg);
+  background-repeat: initial;
+
+}
+
 body > .container {
-  padding-top: @var;
   padding-bottom: 30px;
+  padding-top: @var;
 }
 html {
   position: relative;
@@ -19,9 +30,11 @@ body {
   margin-bottom: 30px;
 }
 .navbar {
-  background-color: @bg-color;
-  border-bottom: 1px solid @color;
+  background-image: linear-gradient(45deg, rgb(44, 184, 240), rgb(60, 55, 231));
 }
+.nav-color {
+  color:#fff !important;
+} 
 .form-group {
   width: 50%;
 }
@@ -34,12 +47,30 @@ body {
     color: @bg-color;
   }
 }
+.btn-delete {
+  background-color: red!important ;
+}
+.btn-update {
+  background-color: rgb(4, 160, 108)!important;
+}
+.btn-info {
+  background-color: rgb(16, 143, 217)!important;
+}
+.btn-add {
+  background-color: rgb(12, 199, 81)!important;
+  margin-bottom: 30px;
+}
 .footer {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: @var;
-  background-color: @bg-color;
+  height: 20px;
+  background-image: linear-gradient(45deg, rgb(44, 184, 240), rgb(60, 55, 231));
+
+}
+
+.txt-color {
+  color: rgb(14, 2, 2)!important;
 }
 table {
   background-color: @bg-color;
@@ -51,3 +82,12 @@ td, th {
 tr.show_director {
   border-bottom: 2.5px solid @color;
 }
+
+.txt-title {
+  font-size: x-large;
+  margin-bottom: 30px;
+}
+
+.txt-footer {
+  margin: 0 0 0 360px;
+} 
