@@ -23,7 +23,7 @@ require "header.php";
             <option value="Romance">Romance</option>
             <option value="Sci-Fi">Sci-Fi</option>
         </select>
-</div>
+    </div>
 
     <button type="submit" class="btn btn-add" name="insert_movie" id="insert_movie">Add new movie</button>
 </form>
