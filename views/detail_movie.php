@@ -34,7 +34,7 @@
 <div>
     <strong>Title:</strong> <?php echo $movie['title']; ?>
 </div>
-<div>
+<div class="txt-show">
     <strong>Movie Duration:</strong> <?php echo $movie['time']; ?>
 </div>
 <div>
