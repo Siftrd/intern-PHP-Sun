@@ -37,7 +37,7 @@
 <div class="txt-show">
     <strong>Movie Duration:</strong> <?php echo $movie['time']; ?>
 </div>
-<div>
+<div class="txt-show2">
     <strong>Movie Genre:</strong> <?php echo $movie['type']; ?>
 </div>
 
