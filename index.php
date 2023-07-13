@@ -16,4 +16,5 @@ $db = new Database($pdo);
 $controller = new Controller($db);
 
 $controller->login();
+
 $controller->index();

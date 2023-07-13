@@ -31,7 +31,7 @@ Class Controller {
             }
         }
         if(isset($_SESSION["user"]) && isset($_POST['login']) ){   
-            header("Location:index.php?page=start");
+            header("Location:index.php");
         }
     }
     public function index() {
@@ -47,11 +47,8 @@ Class Controller {
                 parse_str($_COOKIE[$cookie_name],$array);
                 $user = $array['user'];
                 $pass = $array['pass'];
-                $row =  $this->db->checkLogin('login_data', $user,$pass);
-                if(is_array($row)){
-                    $_SESSION['user'] = $row['username'];
-                }
-                echo $_SESSION['user'];   
+                $_SESSION['user'] = $user;
+
             }
         }
         if(isset($_SESSION['user'])){
@@ -115,7 +112,7 @@ Class Controller {
                     }    
 
                 default:
-                    require "views/start.php";
+                    require "views/show.php";
                     break;
         }
         }
