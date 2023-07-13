@@ -12,6 +12,17 @@ class Database {
     * @param integer $id
     * @return Model
     */
+
+    public function checkLogin($table,$username,$password)
+    {
+        $stm = $this->pdo->prepare('SELECT * FROM '.$table.' WHERE username = :username and password = :password');
+        $stm->bindValue(':username', $username);
+        $stm->bindValue(':password', $password);
+        $success = $stm->execute();
+        $row = $stm->fetch(PDO::FETCH_ASSOC);
+        return ($success) ? $row: [];
+    }
+
     public function getById($table, $id){
         $stm = $this->pdo->prepare('SELECT * FROM '.$table.' WHERE `id` = :id');
         $stm->bindValue(':id', $id);
