@@ -113,3 +113,70 @@ tr.show_director {
 .txt-show2 {
     margin-bottom: 20px;
 }
+
+#logreg-forms {
+    width: 412px;
+    margin: 10vh auto;
+    background-color: #04026d;
+    box-shadow: 0 1px 5px rgba(0, 0, 255, 0.3), 0 1px 2px rgba(0, 0, 255, 0.3);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+
+#logreg-forms form {
+    width: 100%;
+    max-width: 410px;
+    padding: 15px;
+    margin: auto;
+}
+
+#logreg-forms .form-control {
+    position: relative;
+    box-sizing: border-box;
+    height: auto;
+    padding: 10px;
+    font-size: 16px;
+}
+
+#logreg-forms .form-control:focus {
+    z-index: 2;
+}
+
+#logreg-forms .form-signin input[type="email"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+#logreg-forms .form-signin input[type="password"] {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+#logreg-forms a {
+    display: block;
+    padding-top: 10px;
+    color: lightseagreen;
+}
+
+#logreg-form .lines {
+    width: 200px;
+    border: 1px solid red;
+}
+
+#logreg-forms label {
+    margin-top: 8px;
+}
+
+#logreg-forms button[type="submit"] {
+    color: #04026d;
+    margin-top: 5px;
+}
+
+#logreg-forms .form-reset,
+#logreg-forms .form-signup {
+    display: none;
+}
+
+#logreg-forms .form-signup input {
+    margin-bottom: 2px;
+}

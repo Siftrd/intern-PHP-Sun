@@ -7,6 +7,7 @@ abstract class Model {
      */
 	private $db;
 	protected $table = 'movie';
+    protected $login = 'login_data';
 
 	public function __construct(Database $db) {
         $this->db = $db;
@@ -42,5 +43,8 @@ abstract class Model {
     }
     public function delete($id) {
         return $this->db->delete($this->table, $id);
+    }
+    public function checkLogin($username,$password) {
+        return $this->db->checkLogin($this->login,$username,$password);
     }
 }
