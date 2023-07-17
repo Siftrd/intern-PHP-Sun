@@ -1,8 +1,8 @@
-<?php
+<!-- <?php
 if(isset($_SESSION["user"]) ){   
             header("Location:index.php?page=start");
         }
-?>
+?> -->
 <!DOCTYPE html>
 <html lang="en">
     <head>
