@@ -1,5 +1,6 @@
 <?php
-require "Controllers/Controller.php";
+require "Controllers/HomeController.php";
+require "Controllers/UserController.php";
 require "Models/Database.php";
 require "Models/Model.php";
 require "Models/Movie.php";
@@ -13,7 +14,7 @@ $dsn = "mysql:host=".$config['db_host'].";dbname=".$config['db_name'];
 $pdo = new PDO($dsn, $config['db_user'], $config['db_password'], $config['db_options']);
 $db = new Database($pdo);
 
-$controller = new Controller($db);
-
-$controller->login();
-$controller->index();
+$homeController = new HomeController($db);
+$userController = new UserController($db);
+$userController->login();
+$homeController->index();
