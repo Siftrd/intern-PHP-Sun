@@ -99,32 +99,31 @@ Class HomeController {
     }
 
     public function success() {
-        if (isset($_GET['insert_success_movie']) && $_GET['insert_success_movie']) {
-            echo "<p>Your movie was successfully inserted!";
-        }
-        elseif (isset($_GET['insert_success_movie']) && $_GET['insert_success_movie']) {
-            echo "<p>Your movie was successfully inserted!";
-        }
-        elseif (isset($_GET['insert_success_movie']) && !$_GET['insert_success_movie']) {
-            echo "<p>Something went wrong!</p>";
-        }
-        elseif (isset($_GET['insert_success_movie']) && !$_GET['insert_success_movie']) {
-            echo "<p>Something went wrong!</p>";
+        if (isset($_GET['insert_success_movie'])) {
+            if ($_GET['insert_success_movie']) {
+                echo '<script type="text/javascript">';
+                echo 'alert("Your movie was successfully inserted!");';
+                echo '</script>';
+            } else {
+                echo '<script type="text/javascript">';
+                echo 'alert("Something went wrong!");';
+                echo '</script>';
+            }
         }
     }
-
+    
     public function updateSuccess() {
-        if (isset($_GET['update_success_movie']) && $_GET['update_success_movie']) {
-            echo "<p>Your movie was successfully updated!";
-        }
-        elseif (isset($_GET['update_success_movie']) && $_GET['update_success_movie']) {
-            echo "<p>Your movie was successfully updated!";
-        }
-        elseif (isset($_GET['update_success_movie']) && !$_GET['update_success_movie']) {
-            echo "<p>Something went wrong!</p>";
-        }
-        elseif (isset($_GET['update_success_movie']) && !$_GET['update_success_movie']) {
-            echo "<p>Something went wrong!</p>";
+        if (isset($_GET['update_success_movie'])) {
+            if ($_GET['update_success_movie']) {
+                echo '<script type="text/javascript">';
+                echo 'alert("Your movie was successfully updated!");';
+                echo '</script>';
+            } else {
+                echo '<script type="text/javascript">';
+                echo 'alert("Something went wrong!");';
+                echo '</script>';
+            }
         }
     }
+    
 }
