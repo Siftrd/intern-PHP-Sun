@@ -47,4 +47,4 @@ abstract class Model {
     public function checkLogin($username,$password) {
         return $this->db->checkLogin($this->login,$username,$password);
     }
-}
+
