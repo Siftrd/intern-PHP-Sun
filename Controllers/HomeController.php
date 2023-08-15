@@ -29,10 +29,11 @@ class HomeController
         if (isset($_SESSION['user'])) {
             switch ($page) {
                 case "show":
+
                     $this->db->readAll('movie');
                     require "views/show.php";
                     break;
-
+                
                 case "delete_movie":
                     if (isset($_GET['id'])) {
                         $id = $_GET['id'];
@@ -82,13 +83,15 @@ class HomeController
                     require "views/create_movie.php";
                     break;
 
-                case "update_movie":
+
+                case ($page === "update_movie"):
                     if (isset($_GET['id'])) {
                         $id = $_GET['id'];
                         $movie = $this->db->getById('movie', $id);
                         require "views/update_movie.php";
                     }
                     break;
+
 
                 case "do_update_movie":
                     if (isset($_POST['update_movie'])) {
@@ -107,7 +110,6 @@ class HomeController
                             require "views/update_movie.php";
                             break;
                         }
-
                         $movie = new Movie($_POST);
                         $update_success_movie = $this->updatemovie($movie);
                         header('Location: /index.php?page=show&update_success_movie=' . (int)$update_success_movie . '&id=' . $movie->getId());
@@ -123,6 +125,7 @@ class HomeController
                     }
                     break;
 
+
                 case "logout":
                     session_start();
                     if (session_destroy()) {
@@ -130,6 +133,7 @@ class HomeController
                         header('Location:login.php');
                     }
                     break;
+
 
                 default:
                     require "views/start.php";
@@ -210,5 +214,6 @@ class HomeController
         }
 
         return true;
+
     }
 }
